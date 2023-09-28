@@ -19,6 +19,28 @@ class StockRankCollectionViewCell: UICollectionViewCell {
         companyIconImageView.image = UIImage(named: "\(stock.imageName)")
         companyName.text = "\(stock.name)"
         companyPriceLabel.text = "\(convertToCurrencyFormat(price: stock.price)) 원"
+        
+        // stock.diff가 0보다 클 시 빨간색, 작을 시 파란색. 
+        // 내코드:
+//        let stockDiffResult = stock.diff
+//        if stockDiffResult >= 0 {
+//            diffLabel.textColor = UIColor.red
+//        } else {
+//            diffLabel.textColor = UIColor.blue
+//        }
+        
+        // 개선된 코드 (if문)
+//        let color: UIColor
+//        if stock.diff >= 0 {
+//            color = UIColor.systemRed
+//        } else {
+//            color = UIColor.systemBlue
+//        }
+//        diffLabel.textColor = color
+        
+        // 삼항연산자
+        diffLabel.textColor = stock.diff >= 0 ? UIColor.systemRed : UIColor.systemBlue
+        
         diffLabel.text = "\(stock.diff)%"
     }
     
