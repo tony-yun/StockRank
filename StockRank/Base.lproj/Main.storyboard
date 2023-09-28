@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pZ5-og-Dfw">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StockRankCollectionViewCell" id="pZ5-og-Dfw" customClass="StockRankCollectionViewCell" customModule="StockRank" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="122"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cCQ-8Q-C7t">
@@ -48,6 +48,12 @@
                                                         <constraint firstAttribute="height" constant="40" id="x8c-gE-yek"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tesla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIJ-8G-M0Z">
+                                                    <rect key="frame" x="125" y="41" width="38" height="20"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sW-cd-F1Y">
                                                     <rect key="frame" x="125.00000000000001" y="67" width="38.666666666666671" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -69,12 +75,6 @@
                                                     </constraints>
                                                     <imageReference key="image" image="heart.fill" catalog="system" symbolScale="default"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tesla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIJ-8G-M0Z">
-                                                    <rect key="frame" x="125" y="41" width="38" height="20"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="WIJ-8G-M0Z" firstAttribute="leading" secondItem="8Ty-fR-una" secondAttribute="trailing" constant="20" id="4k5-rq-nbF"/>
@@ -92,6 +92,13 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="393" height="122"/>
+                                        <connections>
+                                            <outlet property="companyIconImageView" destination="8Ty-fR-una" id="m9t-Ck-5sH"/>
+                                            <outlet property="companyName" destination="WIJ-8G-M0Z" id="YdK-1e-zR3"/>
+                                            <outlet property="companyPriceLabel" destination="4sW-cd-F1Y" id="d7d-rY-GX4"/>
+                                            <outlet property="diffLabel" destination="GNv-Yx-we7" id="dDU-7D-Hj7"/>
+                                            <outlet property="rankLabel" destination="xSz-r8-f4K" id="SdQ-lk-0Th"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

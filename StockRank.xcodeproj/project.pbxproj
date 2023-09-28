@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D89FD552AC5471C0001375F /* StockRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D89FD542AC5471C0001375F /* StockRankViewController.swift */; };
+		6DFC8A192AC58D2200EF00D9 /* StockRankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC8A182AC58D2200EF00D9 /* StockRankCollectionViewCell.swift */; };
 		944800E2280EE8ED00D7E44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944800E1280EE8ED00D7E44C /* AppDelegate.swift */; };
 		944800E4280EE8ED00D7E44C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944800E3280EE8ED00D7E44C /* SceneDelegate.swift */; };
 		944800E9280EE8ED00D7E44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944800E7280EE8ED00D7E44C /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		6D89FD542AC5471C0001375F /* StockRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankViewController.swift; sourceTree = "<group>"; };
+		6DFC8A182AC58D2200EF00D9 /* StockRankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankCollectionViewCell.swift; sourceTree = "<group>"; };
 		944800DE280EE8ED00D7E44C /* StockRank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockRank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944800E1280EE8ED00D7E44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944800E3280EE8ED00D7E44C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				944800E3280EE8ED00D7E44C /* SceneDelegate.swift */,
 				94480115280EF1E800D7E44C /* StockModel.swift */,
 				6D89FD542AC5471C0001375F /* StockRankViewController.swift */,
+				6DFC8A182AC58D2200EF00D9 /* StockRankCollectionViewCell.swift */,
 				944800E7280EE8ED00D7E44C /* Main.storyboard */,
 				944800EA280EE8EE00D7E44C /* Assets.xcassets */,
 				944800EC280EE8EE00D7E44C /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			files = (
 				944800E2280EE8ED00D7E44C /* AppDelegate.swift in Sources */,
 				94480116280EF1E800D7E44C /* StockModel.swift in Sources */,
+				6DFC8A192AC58D2200EF00D9 /* StockRankCollectionViewCell.swift in Sources */,
 				944800E4280EE8ED00D7E44C /* SceneDelegate.swift in Sources */,
 				6D89FD552AC5471C0001375F /* StockRankViewController.swift in Sources */,
 			);
